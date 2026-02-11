@@ -1,6 +1,6 @@
-variable "storage_table_entitys" {
+variable "storage_table_entities" {
   description = <<EOT
-Map of storage_table_entitys, attributes below
+Map of storage_table_entities, attributes below
 Required:
     - entity
     - partition_key
