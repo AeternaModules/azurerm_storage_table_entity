@@ -1,3 +1,7 @@
+output "storage_table_entities_id" {
+  description = "Map of id values across all storage_table_entities, keyed the same as var.storage_table_entities"
+  value       = { for k, v in azurerm_storage_table_entity.storage_table_entities : k => v.id }
+}
 output "storage_table_entities_entity" {
   description = "Map of entity values across all storage_table_entities, keyed the same as var.storage_table_entities"
   value       = { for k, v in azurerm_storage_table_entity.storage_table_entities : k => v.entity }
